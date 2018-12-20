@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestGoogle">
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="HomePage">
+<!-- 		<groups>
+			<run>
+				<include name="ValidateSentMail"></include>
+			</run>
+		</groups> -->
+		<classes>
+			<class name="tests.GmailSentMessageTest"/>
+		</classes>
+	</test>	
+</suite>
