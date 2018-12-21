@@ -21,12 +21,12 @@ Using DDT by JOSN files
   - Test cases to define testng annotations @Test
   
 # Git Commands - CMD 
- - From project loaction > Git version [to know the version] 
- - From project loaction> Git init [to create initiate git folder hidden]
- - From project loaction> Git status
- - From project loaction> Git add with folder [Write the first letters and press tab after that keep slash / after last letter] for example: [Git add src/]
- - From project loaction> Git add with file [Write the first letters and press tab] for example: [Git add pom.xml]
- - From project loaction> Git commit -m "Your comment"
+ - From project loaction > git version [to know the version] 
+ - From project loaction> git init [to create initiate git folder hidden]
+ - From project loaction> git status
+ - From project loaction> git add with folder [Write the first letters and press tab after that keep slash / after last letter] for example: [Git add src/]
+ - From project loaction> git add with file [Write the first letters and press tab] for example: [Git add pom.xml]
+ - From project loaction> git commit -m "Your comment"
  - From project loaction> git remote add origin https://github.com/Username/RepositoryName
  - From project loaction> git push -u origin master [to push your code remotly with first time]
  - From project loaction> git push -f origin master [to push your code remotly with updates]
