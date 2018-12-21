@@ -73,14 +73,16 @@ public class GmailSentMessage  extends BasePage{
 			if(Inbox.get(i).getText().contains(mailSubject)) {
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='bog']")));
 				Inbox.get(i).click();
-				System.out.println("Message just opened");
+				System.out.println("Message opened successfully");
 			}
 		}
 		if(DownloadArea.getAttribute("innerHTML").contains(fileName)) {
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@aria-label,'Download attachment "+fileName+"')]")));
 			driver.findElement(By.xpath("//*[contains(@aria-label,'Download attachment "+fileName+"')]")).click();
 			Thread.sleep(10000);
-			//Assert.assertTrue(isFileDownloaded(Constant.DownloadFolder, fileName), "Failed to download Expected document");
+			//Xpath clarification below
+			//*[contains(@aria-label,'Download attachment selenium-tutorial.jpg')]
 		}
 	}
-	
+
 }
